@@ -79,13 +79,13 @@
          
             //Kalkulatoor!!!
 
-            Console.WriteLine("Tere, sisesta esimene arv");
+            //Console.WriteLine("Tere, sisesta esimene arv");
             //Adresserime moodulit "Console", punkti abil ütleme, et kasutame funktsiooni WriteLine
             //selle jaoks et öelda kasutajale sõnum mis asub funktsiooni nime järel sulgde vahel
             //ümbritsetuna jutumärkidega. Kasutajale esitatav sõnum on "Tere. Sisesta esimene arv".
             //Lause lõppeb lauselõppemärgiga ";".
 
-            int arv1 = int.Parse(Console.ReadLine());
+            //int arv1 = int.Parse(Console.ReadLine());
             //instantieerime muutuja nimega "arv1", ning selle ette aname andmetüübiks "int", see
             //ütleb ära, et siin muutujas on täisarvud sees. Omistame muutujale võrdusmärgi abil
             //väärtuse, mille saame kasutajalt. Selle jaoks, adresserime uuesti "Console" moodulit
@@ -93,13 +93,13 @@
             //tekstina ei näe välja, küsime int mooduli seest omakorda funktsiooni "Parse", ning paneme
             //ReadLine funktsiooni Parse() sulgude vahele. Lause lõppeb lauselõppemärgiga ";".
 
-            Console.WriteLine("Sisesta teine arv");
+            //Console.WriteLine("Sisesta teine arv");
             //Adresserime moodulit "Console", punkti abil ütleme, et kasutame funktsiooni WriteLine
             //selle jaoks et öelda kasutajale sõnum mis asub funktsiooni nime järel sulgde vahel
             //ümbritsetuna jutumärkidega. Kasutajale esitatav sõnum on "Tere. Sisesta teine arv".
             //Lause lõppeb lauselõppemärgiga ";".
 
-            int arv2 = int.Parse(Console.ReadLine());
+            //int arv2 = int.Parse(Console.ReadLine());
             //instantieerime muutuja nimega "arv2", ning selle ette aname andmetüübiks "int", see
             //ütleb ära, et siin muutujas on täisarvud sees. Omistame muutujale võrdusmärgi abil
             //väärtuse, mille saame kasutajalt. Selle jaoks, adresserime uuesti "Console" moodulit
@@ -107,81 +107,81 @@
             //tekstina ei näe välja, küsime int mooduli seest omakorda funktsiooni "Parse", ning paneme
             //ReadLine funktsiooni Parse() sulgude vahele. Lause lõppeb lauselõppemärgiga ";".
 
-            Console.WriteLine("Sisesta tehemärk: / * + - ^ ");
+            //Console.WriteLine("Sisesta tehemärk: / * + - ^ ");
             //Aadresserime moodulit "Console" koos "WriteLine" funktsiooniga, et esitada kasutajale
             //küsimuse "Sisesta tehemärk: / * + - ^ ". Punkti abil saame moodulist Console, funktsiooni
             //WriteLine, ning sulgude vahel ongi kasutajale esitatav tekst. Tekst ise on ka ümbritsetud
             //jutumärkidega. Lause lõppeb lauselõppemärgiga ";".
 
-            string tehtetyyp = Console.ReadLine();
+            //string tehtetyyp = Console.ReadLine();
             //instatsieerime muutuja nimega "tehtetyyp", mille ette kirjutame andmetüübiks "string".
             //Omistame võrdusmärgi abil, sellesse muutujasse kasutajalt sisendi mille saame kasutade
             //"Console" moodulis oleva ReadLine() funktsiooni abil. Lause lõppeb lauselõppemärgiga ";".
 
-            int tulemus = 0;
+            //int tulemus = 0;
             //instantseerime muutja nimega "tulemus", andmetüübiga int, ning omistame talle algse
             //väärtuse võrdusmärgi abil, milleks on 0. Lause lõppeb lauselõppemärgiga ";".
 
-            if (tehtetyyp == "+")
+            //if (tehtetyyp == "+")
                 //teeme tingimuslause if,ning selle tingimuse määrame ära sulgudega, mille vahel on
                 //võrdsuskontroll. Kontrollime kas muutuja "tehtetyyp" omab andmeid samal kujul
                 //nagu võrdusmärkidest teisel pool olev tekst "+". Siin lause ei lõppe, kuna tegu ei
                 //ole koodiga mis midagi kindlalt veel ära teeb.
-            {
-                tulemus = arv1 + arv2;
-            }
+            //{
+            //    tulemus = arv1 + arv2;
+            //}
             //peale tingimust on koodiplokk {} sulgude vahel, mis sisaldab endas ühte koodirida.
             //selle lauses omistame muutujale "tulemus" võrdusmärgi abil liitmistehte tulemuse,
             //kus liidame kokku muutuja "arv1" ja muutuja "arv2" sisu. Lause lõppeb lauselõppemärgiga ";".
 
-            else if (tehtetyyp == "-")
+            //else if (tehtetyyp == "-")
                 //teeme sekundaarse tingimuslause "else if", ning määrame tema tingimuse ära sulgudega.
                 //Sulgude vahel on võrdsuskontroll. Kontrollime kas muutja "tehtetyyp" omab andmeid
                 //samal kujul nagu võrdusmärkidest teisel pool olev tekst "-" kui eelnev tingimus ei
                 //täitunud. Lause siin ei lõppe, vaid tingimusele järgneb koodiplokk.
-            {
-                tulemus = arv1 - arv2;
-            }
+            //{
+            //    tulemus = arv1 - arv2;
+            //}
             //peale tingimust on koodiplokk {} loogeliste sulgude vahel, mis sisaldab endas ühte
             //koodirida. selles lauses omistame muutujale "tulemus" võrdusmärgi abil lahutustehte
             //tulemuse, kus lahutame muutuja "arv" sees olevast väärtusest maha "arv2" muutujas
             //oleva väärtuse. Lause lõppeb lauselõppemärgiga ";".
 
-            else if (tehtetyyp == "/")
+            //else if (tehtetyyp == "/")
             //teeme sekundarse tingimuslause "else if2, ning määrassme tema tingimuse ära sulgudega.
             //Sulgude vahel on võrduskontroll. Kontrollime kas muutuja "tehtetyyp" omab andmeid
             //samal kujul nagu võrdusmärkidest teisel pool olev tekst "/" kui eelnev tingimus ei täitunud
             //Lause siin ei lõppe, vaid tingimusele järgneb koodiplokk.
-            {
-                tulemus = arv1 / arv2;
-            }
+            //{
+            //    tulemus = arv1 / arv2;
+            //}
             //peale tingimust on koodiplokk {} loogeliste sulgude vahel, mis sisaldab endas ühte
             //koodirida. selles lauses omistame muutujale "tulemus" võrdusmärgi abil korrutustehte
             //tullemuse, kus jagame muutujas "arv1" oleva väärtuse, muutujas "arv2" oleva jagajaga
             //Lause lõppeb lauselõppemärgiga ";".
 
-            else if (tehtetyyp == "*")
+            //else if (tehtetyyp == "*")
             //teeme sekundaarse tingimuslause "else if", ning määrame tema tingimuse ära sulgudega.
             //Sulgude vahel on võrdsuskontroll. Kontrollime kas muutuja "tehtetyyp" omab andmeid
             //samal kujul nagu võrdusmärkidest teisel pool olev tekst "*" kui eelnev tingimus ei
             //täitnud. Lause siin ei lõppe, vaid tingimusele järgneb koodiplokk.
 
-            {
-                tulemus = arv1 * arv2;
-            }
+            //{
+            //    tulemus = arv1 * arv2;
+            //}
             //peale tingimust on koodiplokk {} loogeliste sulgude vahel, mis sisaldab endas ühte
             //koodirida. selles lauses omistame muutjale "tulemus" võrdusmärgi abil korrutustehte
             //tulemuse, kus korrutame muutujas "arv2" oleva väärtuse muutjas "arv1" oleva väärtuse
             //kordi. Lause lõppeb lauselõppemärgiga ";".
 
-            else if (tehtetyyp == "^")
+            //else if (tehtetyyp == "^")
             //teeme sekundaarse tingimuslause "else if", ning määrame tema tingimuse ära sulgudega.
             //Sulgud vahel on võrdsuskontoll, kontrollime kas muutuja "tehtetyyp" omab andmeid
             //samal kujul nagu võrdusmärkidest teisel pool olev tekst "^" kul eelnev tingimus ei
             //täitnud. Lause siin ei lõppe, vaid tingimusele järgneb koodiplokk.
-            {
-                tulemus = (int)Math.Pow(arv1, arv2);
-            }
+            //{
+            //    tulemus = (int)Math.Pow(arv1, arv2);
+            //}
             //peale tingimust on koodiplokk {} loogeliste sulgude vahel, mis sisaldab endas ühte
             //kooditida. Selles lauses omistatakse võrdusmärgi abil muutujasse "tulemus" mille saame
             //"Math" moodulist pärineva funktsiooni "Pow()" abil. Math.Pow() võtab parameetrina
@@ -190,19 +190,19 @@
             //"tulemus" andmetüüp on täisarv. Math.Pow() väljund teisendatakse nii täisarvuks.
             //Lause lõppeb lauselõppemärgiga ";".
 
-            else
+            //else
             //pealekõiki järeltingimusi on meil tingimuslause ose "else" mida täedatakse kõikide muude
             //tingimuslause osage miitetätumisel. Siin eraldi tingimust välja ei kirjutada
             //ning sellest tulenevalt ei ole ka sulge. Järgneb ainult koodiplokk-
-            {
-                Console.WriteLine("Palun sisestada tehe, mida kalkulaator tuvastada oskab");
-            }
+            //{
+            //    Console.WriteLine("Palun sisestada tehe, mida kalkulaator tuvastada oskab");
+            //}
             //pelse "else" on koodiplokk {} loogeliste sulgude vahel, mis sisaldab endas ühte
             //koodirida. Selles koodireas kasutame moodulist "Console" punkti abil funktsiooni
             //"WriteLine" et öelda kasutajale "Palun sisesta tehe, mida kalkulaator tuvastada
             //oskab". Koodirida lõppeb lauselõppemärgiga ";".
 
-            Console.WriteLine(tulemus);
+            //Console.WriteLine(tulemus);
             //Kasutame moodulist "Console" punkti abil funktsiooni "WriteLine" et kuvada kasutajale
             //tehte tulemus. Selle jaoks on WriteLine funktsioonis parameetrina pandud muutuja
             //"tulemus" ilma tekstiks teisedamata. Lause lõppeb lauselõppemärgiga ";".
@@ -279,6 +279,29 @@
             // static, string, struct, switch, this, throw, try, typeof, uint
             // ulong, unchekced, unsafe, ushort, using, virtual, void, volatile, while.
 
+            Console.WriteLine("Sisesta ostusumma");
+            double ostusumma = double.Parse(Console.ReadLine());
+            if (ostusumma > 100)
+            {
+                Console.WriteLine("Saad 20% allahindlust!");
+            }
+            else if (ostusumma < 101 && ostusumma > 50)
+            {
+                Console.WriteLine("Saad 10% allahindlust!");
+            }
+            else if (ostusumma < 51 && ostusumma > 20)
+            {
+                Console.WriteLine("5% allahindlust.");
+            }
+            else if (ostusumma < 21 && ostusumma > 0)
+            {
+                Console.WriteLine("allahindlust ei saa");
+            }
+            else
+            {
+                Console.WriteLine("sisestanud vigane arv");
+            }
+
             //string kasutajanimi = "";
             //do
             //{
@@ -324,8 +347,8 @@
             //on samamoodi sulgude vahel, ning millele pepab eelnema alat kas "if" või teine "else if". Tingimuse täitumisel
             //ja eelneva tingimuse mittetäitumisel, teostatakse koodiplokki sees olev kood.
 
-            else {} //käitastud sõna else kutsub esile järeltingimuse, millele peab eelenema kas "if" või "else if", ning mille koodiplokki sisu
-                    //täidetakse kõikide teiste "if" ja "else if" tingimuste läbikukkumisel.
+            else { } //käitastud sõna else kutsub esile järeltingimuse, millele peab eelenema kas "if" või "else if", ning mille koodiplokki sisu
+                     //täidetakse kõikide teiste "if" ja "else if" tingimuste läbikukkumisel.
 
             /* Loogilised tehted */
 
@@ -352,7 +375,7 @@
 
             /* omastusoperaatorid ja kiirtehted */
 
-            int thing = !;// = -> üksik võrdusmärk omistab muutuja sisse väärtuse, mida saab kasutada, läbi muutuja nime.
+            int thing = 1; // = -> üksik võrdusmärk omistab muutuja sisse väärtuse, mida saab kasutada, läbi muutuja nime.
             thing += 1;   // += -> võrdusmärk mille ees on pluss, automaatselt liidab muutujale otsa võrdusmärgi teisel pool oleva arvu.
                           //       asendab tehet "thing = thing + 1". on kombinatsioon atemaatiliselt tehtest "+" ja omistamisest "=".
             thing -= 1;   // -= -> võrdusmärk mille ees on miinus, automaatselt lahutab muutjast maha võrdusmärgi teisel pool oleva arvu.
