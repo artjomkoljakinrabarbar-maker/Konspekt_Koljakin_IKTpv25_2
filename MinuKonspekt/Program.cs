@@ -350,6 +350,32 @@
             else { } //käitastud sõna else kutsub esile järeltingimuse, millele peab eelenema kas "if" või "else if", ning mille koodiplokki sisu
                      //täidetakse kõikide teiste "if" ja "else if" tingimuste läbikukkumisel.
 
+            int option = 3; // --------
+            switch (option) // "switch on kaitstud sõna alternatiivse tingimuskontrolli jaoks mida saab ef else-if asemel kasutdada.
+                            //Sulgude vahele käib muutuja nimi, mille põhjal tingimuslik ümberlülitus toimub. Siin sulgude vahel
+                            //ei ole tingimus ise, vaid kõigest kontrollitav muutuja, või omakorda sulgude vahel muu tingimus.
+                            //pärast lülitusvalikut tuleb koodiplokk.
+            {
+                case 1:     //koodiplokki sees on erinevad juhtumid, juhtumit sätestatakse kaitsud sõna "case" abil. antud juhul kontrollitakse,
+                            //kas muutujas "option" on väärtus 1, millele järgned koolon ":" väljendades tingimuse täitumisel tehtava
+                            //kooditegevuse algust
+                    break;      //Kui tegevus on tehtud, väljutakse mitte ainult juhtumist vaid kogu käesoleva case-tingimustikust käitstud
+                                //sõnaga "break". Peale breaki on lauselõpemärk ";".
+                case 2:         //Juhtmeid võib olla mitmeid, antud juhul on neid kolm kindlalt.
+                    break;
+                case 3:
+                    Console.WriteLine(option); //tehtav kooditegevus.
+                    break;
+                default:    //Default juhtumit täidetakse siis, kui ülejäänud juhtumid ei kirjelda muutujas "option" olevat seisu.
+                    break;  //Ka default lõppeb sõnaga break.
+            }
+
+            /* sõne tööriistad ja muud tekstiga seotut */
+            string alfa = "a\nb";         // \nb -> tekitab ühe sõne sisse reamurde, sõne kus on sees "\n", omab kahte rida.
+            string beta = $"a {alfa} b";  // $ -> lubab kasutada muutjaid loogeliste sulgudega otse teksti sees. On variant
+                                          //      formateeritud stringist.
+
+
             /* Loogilised tehted */
 
             // && -> "and" loogiline tehe, mida kasutatakse tingimuste kirjeldamisel, ning mis annab positiivs vastuse (true) juhul kui
@@ -390,10 +416,22 @@
 
             /* Tsükilid */
             // 1. do while
+            int dew = 0;
             do // "do" on käitstud sõna, mis alustab dó-while tsüklit. Pärst seda on koodiplokk {} ning ütleb et tee seda koodi
             {
+                dew++;
+            } while (dew != 5); // niikaua kuni while järel olevate sulgude vahel tingimus ei täitu, käivitatakse eelnev kood uuesti.
 
-            } while (true); // niikaua kuni while järel olevate sulgude vahel tingimus ei täitu, käivitatakse eelnev kood uuesti.
+            // 2. while
+            int i = 1;      //tsüklimuutuja mis aitab järge pidada while tsükli toimimisel
+            while (i < 5);  //"while" on kaitstud sõna mis alustab while tsükli varianti, ilma "do"-ta, ning vajab alati välist
+                            //tsüklimuutujat. Antud juhul on selleks i. Tsükli tingimus, mis peale "while" sõna on, asub sulgude vahel,
+                            //siin kontrollitaksegi tsükli tööd, läbi kindla tingimuse kasutades tsüklimuutujat.
+                            // antud juhul tsükkel töötab niikaua, kuni i on väiksem kui 5. kui i on sama suur nagu 5, siis tsükkel katkeb
+            {
+                //koodiplokk kus midagi tehakse
+                i++;        //ning seejärel muudetakse tsüklimuutuja "i" olekut. Antud juhul liidetakse 1 juurde kiirtehtega "++".
+            }
         }
     }
 }
